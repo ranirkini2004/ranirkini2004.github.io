@@ -4,7 +4,7 @@ A modern, interactive developer portfolio website designed to showcase my projec
 
 The site features a responsive **Indigo & Violet** aesthetic with interactive elements like a particle network background, 3D tilt cards, and typing animations.
 
-🔗 **Live Demo:** [Link to your GitHub Pages URL here]
+🔗 **Live Demo:** https://ranirkini2004.github.io/
 
 ---
 
