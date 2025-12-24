@@ -4,14 +4,14 @@ document.addEventListener('DOMContentLoaded', () => {
     particlesJS("particles-js", {
         "particles": {
             "number": { "value": 60, "density": { "enable": true, "value_area": 800 } },
-            "color": { "value": "#6366f1" }, // Changed to Indigo for theme consistency
+            "color": { "value": "#6366f1" }, // Indigo particles
             "shape": { "type": "circle" },
             "opacity": { "value": 0.3, "random": false },
             "size": { "value": 3, "random": true },
             "line_linked": {
                 "enable": true,
                 "distance": 150,
-                "color": "#6366f1", // Connecting lines are now Indigo
+                "color": "#6366f1", // Indigo lines
                 "opacity": 0.2,
                 "width": 1
             },
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "interactivity": {
             "detect_on": "canvas",
             "events": {
-                "onhover": { "enable": true, "mode": "bubble" }, // Changed to bubble for fun effect
+                "onhover": { "enable": true, "mode": "bubble" },
                 "onclick": { "enable": true, "mode": "push" },
                 "resize": true
             },
