@@ -3,18 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rani Ramanath Kini | Web Developer Portfolio</title>
+    <title>Rani Ramanath Kini | Interactive Portfolio</title>
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
+    <div id="particles-js"></div>
+
     <header>
       <nav>
         <div class="logo">Rani Ramanath Kini</div>
@@ -22,7 +24,6 @@
           <li><a href="#about">About</a></li>
           <li><a href="#education">Education</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="#competitions">Competitions</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
           <li>
@@ -40,38 +41,42 @@
     </header>
 
     <main>
-      <section id="hero-fresher">
-        <div class="container">
-          <div class="hero-container">
-            <div class="hero-text">
-              <h1>Hi, I'm <span class="highlight">Rani Ramanath Kini</span></h1>
-              <p>I am an aspiring <span id="typed-text"></span></p>
-              <div class="social-links">
-                <a href="https://github.com/ranirkini2004" target="_blank" aria-label="GitHub">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/rani-ramanath-kini-424050263/" target="_blank" aria-label="LinkedIn">
-                  <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="mailto:rani.kini.17@gmail.com" aria-label="Email">
-                  <i class="fas fa-envelope"></i>
-                </a>
-              </div>
-              <a href="#projects" class="btn primary-btn">See My Projects</a>
+      <section id="hero">
+        <div class="container hero-container">
+          <div class="hero-text">
+            <span class="badge">🚀 Final Year CSE Student</span>
+            <h1>Hi, I'm <span class="highlight">Rani Ramanath Kini</span></h1>
+            <h2>I create <span id="typed-text"></span></h2>
+            <p>
+              Bridging the gap between <b>Web Development</b> and <b>Artificial Intelligence</b> to build smarter, user-centric applications.
+            </p>
+            <div class="hero-buttons">
+              <a href="#projects" class="btn primary-btn">View My Work</a>
+              <a href="#contact" class="btn secondary-btn">Contact Me</a>
             </div>
-            <div class="hero-image">
-              <img src="assets/images/pic.jpg" alt="Rani Ramanath Kini Profile Picture" class="profile-pic" />
+            
+            <div class="social-links">
+              <a href="https://github.com/ranirkini2004" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/rani-ramanath-kini-424050263/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              <a href="mailto:rani.kini.17@gmail.com"><i class="fas fa-envelope"></i></a>
             </div>
+          </div>
+          <div class="hero-img-container">
+            <div class="blob"></div>
+            <img src="assets/images/pic.jpg" alt="Profile" class="profile-pic" data-tilt />
           </div>
         </div>
       </section>
 
       <section id="about" class="hidden">
         <div class="container">
-          <h2>About Me</h2>
-          <div class="about-content">
+          <h2 class="section-title">About Me</h2>
+          <div class="about-card" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
             <p>
-              As a final-year student, I am passionate about crafting clean and user-friendly web solutions and exploring AI technologies. My core skills are in HTML, CSS, JavaScript, and Python. I thrive on the challenges of both creative design and logical problem-solving. Eager to contribute and grow, I am actively seeking roles where I can apply my knowledge in Web Development and AI.
+              I am passionate about crafting clean web solutions and exploring the depths of AI. 
+              My core skills lie in <b>Full Stack Development</b> and <b>Machine Learning</b>. 
+              I thrive on challenges—whether it's optimising a React frontend or training a YOLO model for accessibility.
+              I am currently seeking opportunities to apply my skills in a dynamic environment.
             </p>
           </div>
         </div>
@@ -79,33 +84,33 @@
 
       <section id="education" class="hidden">
         <div class="container">
-          <h2>My Education</h2>
+          <h2 class="section-title">Education Journey</h2>
           <div class="timeline">
-            <div class="timeline-item hidden">
-              <div class="timeline-dot"></div>
-              <div class="timeline-date">November 2022 - Present</div>
-              <div class="timeline-content">
-                <h3>Bachelor of Engineering, CSE</h3>
-                <p class="timeline-institution">Canara Engineering College, Bantwal</p>
-                <p>Current CGPA: 9.17 / 10.0</p>
+            <div class="timeline-item">
+              <div class="circle-dot"></div>
+              <h3 class="timeline-date">Nov 2022 - Present</h3>
+              <div class="timeline-content hover-lift">
+                <h4>Bachelor of Engineering, CSE</h4>
+                <p class="institution">Canara Engineering College</p>
+                <p class="grade">CGPA: 9.17 / 10.0</p>
               </div>
             </div>
-            <div class="timeline-item hidden">
-              <div class="timeline-dot"></div>
-              <div class="timeline-date">April 2021 - June 2022</div>
-              <div class="timeline-content">
-                <h3>Pre-University College (Class XII)</h3>
-                <p class="timeline-institution">Kendriya Vidyalaya INS Kadamba, Arga, Karwar</p>
-                <p>Percentage: 91%</p>
+            <div class="timeline-item">
+              <div class="circle-dot"></div>
+              <h3 class="timeline-date">2021 - 2022</h3>
+              <div class="timeline-content hover-lift">
+                <h4>Class XII (Science)</h4>
+                <p class="institution">Kendriya Vidyalaya INS Kadamba</p>
+                <p class="grade">Percentage: 91%</p>
               </div>
             </div>
-            <div class="timeline-item hidden">
-              <div class="timeline-dot"></div>
-              <div class="timeline-date">April 2019 - March 2020</div>
-              <div class="timeline-content">
-                <h3>Secondary School (Class X)</h3>
-                <p class="timeline-institution">Kendriya Vidyalaya INS Kadamba, Arga, Karwar</p>
-                <p>Percentage: 80.2%</p>
+            <div class="timeline-item">
+              <div class="circle-dot"></div>
+              <h3 class="timeline-date">2019 - 2020</h3>
+              <div class="timeline-content hover-lift">
+                <h4>Class X</h4>
+                <p class="institution">Kendriya Vidyalaya INS Kadamba</p>
+                <p class="grade">Percentage: 80.2%</p>
               </div>
             </div>
           </div>
@@ -114,145 +119,124 @@
 
       <section id="skills" class="hidden">
         <div class="container">
-          <h2>Core Skills</h2>
-          <div class="skills-grid">
-            <div class="skill-item"><i class="fab fa-html5"></i> HTML</div>
-            <div class="skill-item"><i class="fab fa-css3-alt"></i> CSS</div>
-            <div class="skill-item"><i class="fab fa-js"></i> JavaScript</div>
-            <div class="skill-item"><i class="fab fa-react"></i> React</div>
-            <div class="skill-item"><i class="fab fa-git-alt"></i> Git</div>
-            <div class="skill-item"><i class="fas fa-database"></i> MySQL</div>
-            <div class="skill-item"><i class="fa-brands fa-firebase"></i> Firebase</div>
-            <div class="skill-item"><i class="fas fa-mobile-alt"></i> Flutter</div>
-            <div class="skill-item"><i class="fab fa-java"></i> Java</div>
-            <div class="skill-item"><i class="fab fa-python"></i> Python</div>
-          </div>
-        </div>
-      </section>
-
-      <section id="competitions" class="hidden">
-        <div class="container">
-          <h2>Hackathons & Competitions</h2>
-          <div class="competitions-grid">
-            <div class="competition-card hidden">
-              <div class="competition-header">
-                <h3>SAP Hackfest - Pitch</h3>
-                <p class="competition-date"><i class="fas fa-calendar-alt"></i> July 2025</p>
-              </div>
-              <p class="competition-description">
-                Pitched a blockchain-based marketplace concept designed to provide artisans with direct market access and ensure fair trade through a transparent supply chain.
-              </p>
-            </div>
-            <div class="competition-card hidden">
-              <div class="competition-header">
-                <h3>TITAN ’MakeforMangaluru’ Makeathon</h3>
-                <p class="competition-date"><i class="fas fa-calendar-alt"></i> August 2025</p>
-              </div>
-              <p class="competition-description">
-                Prototyped a secure payment architecture using an escrow model with automated split payments to guarantee fair and direct disbursement to artisans.
-              </p>
-              <div class="competition-links">
-                <a href="assets/images/certificate.png" class="btn secondary project-btn" target="_blank">
-                  <i class="fas fa-certificate"></i> View Certificate
-                </a>
-              </div>
-            </div>
+          <h2 class="section-title">My Tech Stack</h2>
+          <div class="skills-wrapper">
+            <div class="skill-pill hover-pop"><i class="fab fa-python" style="color:#3776AB"></i> Python</div>
+            <div class="skill-pill hover-pop"><i class="fab fa-java" style="color:#007396"></i> Java</div>
+            <div class="skill-pill hover-pop"><i class="fab fa-js" style="color:#F7DF1E"></i> JavaScript</div>
+            <div class="skill-pill hover-pop"><i class="fab fa-react" style="color:#61DAFB"></i> React</div>
+            <div class="skill-pill hover-pop"><i class="fas fa-mobile-alt" style="color:#02569B"></i> Flutter</div>
+            <div class="skill-pill hover-pop"><i class="fab fa-html5" style="color:#E34F26"></i> HTML5</div>
+            <div class="skill-pill hover-pop"><i class="fab fa-css3-alt" style="color:#1572B6"></i> CSS3</div>
+            <div class="skill-pill hover-pop"><i class="fas fa-database" style="color:#4479A1"></i> MySQL</div>
+            <div class="skill-pill hover-pop"><i class="fa-brands fa-firebase" style="color:#FFCA28"></i> Firebase</div>
+            <div class="skill-pill hover-pop"><i class="fab fa-git-alt" style="color:#F05032"></i> Git</div>
+            <div class="skill-pill hover-pop"><i class="fas fa-brain" style="color:#9333EA"></i> AI / ML</div>
           </div>
         </div>
       </section>
 
       <section id="projects" class="hidden">
         <div class="container">
-          <h2>My Projects</h2>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Hover over the cards to see the 3D effect!</p>
           <div class="projects-grid">
             
-            <div class="project-card hidden">
-              <img src="assets/images/resume_relevance.jpg" alt="Resume Relevance System Screenshot" class="project-image" />
-              <h3>Resume Relevance AI</h3>
-              <p>
-                An intelligent automation system using Google Gemini API to screen resumes against job descriptions. It utilizes hybrid scoring (keyword + semantic analysis) to generate relevance scores and personalized feedback.
-              </p>
-              <p><strong>Technologies:</strong> Python, Google Gemini API, NLP, Flask</p>
-              <div class="project-links">
-                <a href="https://automated-resume-checker.web.app/" class="btn project-btn" target="_blank">
-                  <i class="fas fa-external-link-alt"></i> Live Demo
-                </a>
-                <a href="https://github.com/ranirkini2004/Code4EdTech-Challenge" class="btn secondary project-btn" target="_blank">
-                  <i class="fab fa-github"></i> View Code
-                </a>
+            <div class="project-card" data-tilt data-tilt-scale="1.05">
+              <div class="card-img">
+                <img src="assets/images/resume_relevance.jpg" alt="Resume AI" />
+                <div class="overlay">
+                  <a href="https://github.com/ranirkini2004/Code4EdTech-Challenge" target="_blank" class="icon-btn"><i class="fab fa-github"></i></a>
+                  <a href="https://automated-resume-checker.web.app/" target="_blank" class="icon-btn"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3>Resume Relevance AI</h3>
+                <p>Automated resume screening using Google Gemini API. Features hybrid scoring (keyword + semantic) for precise matching.</p>
+                <div class="tech-tags">
+                  <span>Python</span><span>Gemini API</span><span>Flask</span>
+                </div>
               </div>
             </div>
 
-            <div class="project-card hidden">
-              <img src="assets/images/indoor_nav.jpg" alt="NavAI App Screenshot" class="project-image" />
-              <h3>NavAI: Indoor Navigation</h3>
-              <p>
-                A mobile app designed to assist the visually impaired with indoor navigation. It utilizes on-device AI for real-time object detection and path planning.
-              </p>
-              <p><strong>Technologies:</strong> Flutter, YOLOv8, DQN, Python</p>
-              <div class="project-links">
-                <a href="https://github.com/ranirkini2004/NavAI-Indoor-Nav-Guide" class="btn secondary project-btn" target="_blank">
-                  <i class="fab fa-github"></i> View Code
-                </a>
+            <div class="project-card" data-tilt data-tilt-scale="1.05">
+              <div class="card-img">
+                <img src="assets/images/indoor_nav.jpg" alt="NavAI" />
+                <div class="overlay">
+                  <a href="https://github.com/ranirkini2004/NavAI-Indoor-Nav-Guide" target="_blank" class="icon-btn"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3>NavAI: Indoor Nav</h3>
+                <p>Blind assistance app using YOLOv8 & DQN for real-time object detection and intelligent pathfinding on mobile.</p>
+                <div class="tech-tags">
+                  <span>Flutter</span><span>YOLOv8</span><span>AI</span>
+                </div>
               </div>
             </div>
 
-            <div class="project-card hidden">
-              <img src="assets/images/certificate_verification.jpg" alt="Cryptography Project Screenshot" class="project-image" />
-              <h3>Certificate Verification </h3>
-              <p>
-                A Python tool designed to demonstrate the cryptographic verification of digital signatures. It simulates how systems validate X.509 certificates using RSA keys, replicating the security logic behind SSL/TLS.
-              </p>
-              <p><strong>Technologies:</strong> Python, Cryptography Lib, RSA, X.509</p>
-              <div class="project-links">
-                <a href="https://github.com/ranirkini2004/Certificate-Signature-Verification-System" class="btn secondary project-btn" target="_blank">
-                  <i class="fab fa-github"></i> View Code
-                </a>
+            <div class="project-card" data-tilt data-tilt-scale="1.05">
+              <div class="card-img">
+                <img src="assets/images/certificate_verification.jpg" alt="Crypto" />
+                <div class="overlay">
+                  <a href="https://github.com/ranirkini2004/Certificate-Signature-Verification-System" target="_blank" class="icon-btn"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3>Cert Verification 🛡️</h3>
+                <p>Simulates SSL/TLS security by cryptographically verifying X.509 digital certificate signatures using RSA keys.</p>
+                <div class="tech-tags">
+                  <span>Python</span><span>RSA</span><span>Security</span>
+                </div>
               </div>
             </div>
 
-            <div class="project-card hidden">
-              <img src="assets/images/recipe.png" alt="Find My Recipe Screenshot" class="project-image" />
-              <h3>Find My Recipe</h3>
-              <p>
-                FindMyRecipe is a full-stack web application that allows users to discover recipes based on ingredients they have or by searching recipe names.
-              </p>
-              <p><strong>Technologies:</strong> ReactJS, Flask, Tailwind, MySQL</p>
-              <div class="project-links">
-                <a href="https://find-my-recipe-6bf86.web.app" class="btn project-btn" target="_blank">
-                  <i class="fas fa-external-link-alt"></i> Live Demo
-                </a>
-                <a href="https://github.com/ranirkini2004/FindMyRecipe" class="btn secondary project-btn" target="_blank">
-                  <i class="fab fa-github"></i> View Code
-                </a>
+            <div class="project-card" data-tilt data-tilt-scale="1.05">
+              <div class="card-img">
+                <img src="assets/images/recipe.png" alt="Recipe App" />
+                <div class="overlay">
+                  <a href="https://github.com/ranirkini2004/FindMyRecipe" target="_blank" class="icon-btn"><i class="fab fa-github"></i></a>
+                  <a href="https://find-my-recipe-6bf86.web.app" target="_blank" class="icon-btn"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3>Find My Recipe</h3>
+                <p>Search recipes by ingredients you have at home. Full-stack application with user uploads.</p>
+                <div class="tech-tags">
+                  <span>React</span><span>Flask</span><span>MySQL</span>
+                </div>
               </div>
             </div>
 
-            <div class="project-card hidden">
-              <img src="assets/images/prediction.jpeg" alt="Loan Prediction Screenshot" class="project-image" />
-              <h3>Loan Approval Prediction</h3>
-              <p>
-                A Flask-based web application that predicts whether a loan application is likely to be approved based on applicant details such as income and credit history.
-              </p>
-              <p><strong>Technologies:</strong> HTML, CSS, Python, Flask</p>
-              <div class="project-links">
-                <a href="https://github.com/ranirkini2004/Loan-Approval-Prediction" class="btn secondary project-btn" target="_blank">
-                  <i class="fab fa-github"></i> View Code
-                </a>
+            <div class="project-card" data-tilt data-tilt-scale="1.05">
+              <div class="card-img">
+                <img src="assets/images/prediction.jpeg" alt="Loan Prediction" />
+                <div class="overlay">
+                  <a href="https://github.com/ranirkini2004/Loan-Approval-Prediction" target="_blank" class="icon-btn"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3>Loan Prediction</h3>
+                <p>Machine Learning web app to predict loan approval probability based on credit history.</p>
+                <div class="tech-tags">
+                  <span>Python</span><span>Flask</span><span>ML</span>
+                </div>
               </div>
             </div>
 
-            <div class="project-card hidden">
-              <img src="assets/images/med_reminder.png" alt="AgeWell App Screenshot" class="project-image" />
-              <h3>AgeWell: Med Reminder</h3>
-              <p>
-                A FlutterFlow app that helps senior citizens manage their medications by setting intuitive reminders for their pills.
-              </p>
-              <p><strong>Technologies:</strong> Flutterflow, Firebase</p>
-              <div class="project-links">
-                <a href="https://github.com/ranirkini2004/Senior-Citizen-App" class="btn secondary project-btn" target="_blank">
-                  <i class="fab fa-github"></i> View Code
-                </a>
+             <div class="project-card" data-tilt data-tilt-scale="1.05">
+              <div class="card-img">
+                <img src="assets/images/med_reminder.png" alt="AgeWell" />
+                <div class="overlay">
+                  <a href="https://github.com/ranirkini2004/Senior-Citizen-App" target="_blank" class="icon-btn"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3>AgeWell</h3>
+                <p>Medication reminder app for seniors built with FlutterFlow and Firebase backend.</p>
+                <div class="tech-tags">
+                  <span>FlutterFlow</span><span>Firebase</span>
+                </div>
               </div>
             </div>
 
@@ -262,32 +246,25 @@
 
       <section id="contact" class="hidden">
         <div class="container">
-          <h2>Get In Touch</h2>
-          <p>
-            I'm currently looking for new opportunities and my inbox is always open. Whether you have a question or just want to say hi, I'll get back to you!
-          </p>
-          <div class="contact-links-container">
-            <a href="mailto:rani.kini.17@gmail.com" class="btn contact-btn">
-              <i class="fas fa-envelope"></i> Email Me
-            </a>
-            <a href="https://www.linkedin.com/in/rani-ramanath-kini-424050263/" target="_blank" class="btn contact-btn">
-              <i class="fab fa-linkedin"></i> LinkedIn
-            </a>
-            <a href="https://github.com/ranirkini2004" target="_blank" class="btn contact-btn">
-              <i class="fab fa-github"></i> GitHub
-            </a>
+          <div class="contact-box">
+            <h2>Let's Work Together</h2>
+            <p>Have a project in mind or want to discuss AI? I'm just a click away.</p>
+            <div class="cta-buttons">
+              <a href="mailto:rani.kini.17@gmail.com" class="btn primary-btn"><i class="fas fa-paper-plane"></i> Email Me</a>
+              <a href="https://www.linkedin.com/in/rani-ramanath-kini-424050263/" target="_blank" class="btn secondary-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
     <footer>
-      <div class="container">
-        <p style="text-align: center;">Designed & Built by Rani Ramanath Kini &copy; 2025</p>
-      </div>
+      <p>Made with <i class="fas fa-heart" style="color: #e25555;"></i> by Rani Ramanath Kini &copy; 2025</p>
     </footer>
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
